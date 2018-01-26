@@ -16,7 +16,7 @@ public class Filme {
 
     @Id
     @GeneratedValue
-    private BigDecimal preco;
+    private BigDecimal preco = new BigDecimal ("0.0");
     private Integer id;
     private String nome;
     private Duration duracao;

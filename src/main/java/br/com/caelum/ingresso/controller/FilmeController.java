@@ -45,6 +45,8 @@ public class FilmeController {
         if (result.hasErrors()) {
             return form(Optional.ofNullable(filme.getId()), filme);
         }
+        
+        filme.setId(null);
 
         filmeDao.save(filme);
 
